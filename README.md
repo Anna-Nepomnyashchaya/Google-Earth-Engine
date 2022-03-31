@@ -1,6 +1,6 @@
 # Google Earth Engine
 ---------------------
-   We use machine learning when working with geodata. Geologists are searching for minerals such as sand for construction. Sand lies at the bottom of thermokarst lakes. With the help of Google Earth Engine and machine learning based on satellite imagery, we created a training sample by selecting a certain number of thermokarst lakes manually. Then a test sample of a larger area was selected on which the algorithm selected all the lakes. Thus, a map was created for geologists that will help them in the search for minerals, that is, sand at the bottom of thermokarst lakes.
+   We use machine learning when working with geodata. Geologists are looking for minerals, such as sand for construction. The sand lies at the bottom of thermokarst lakes. Using the Google Earth engine and machine learning based on satellite images, we created a training sample by selecting a certain number of thermokarst lakes manually. Then a test sample was selected, on which the algorithm selected all the lakes. The result of the algorithm is visible by the lakes selected outside the satellite image. Thus, a map was created for geologists to search for minerals.
 
 Python and JavaScript client libraries for calling the Google Earth Engine API
 

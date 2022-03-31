@@ -1,7 +1,7 @@
 # Google Earth Engine
-=======================
+---------------------
 
-Python and JavaScript client libraries for calling the Google Earth Engine API.
+Python and JavaScript client libraries for calling the Google Earth Engine API
 
 -   [Earth Engine Homepage](https://earthengine.google.com/)
 -   [Web Code Editor](https://code.earthengine.google.com/)
@@ -28,9 +28,9 @@ return image.addBands(ndvi);
 var start = ee.Date('2016-06-01'); 
 var finish = ee.Date('2016-08-31'); 
 var img = ee.ImageCollection('COPERNICUS/S2')
-.filterBounds(bounds) // Фильтруем по области интереса 
-.filterDate(start,finish) // Фильтруем по датам 
-.filter(ee.Filter.lt('CLOUD_COVERAGE_ASSESSMENT',9)).map(addNDVI) ; // Фильтруем по облачности 
+.filterBounds(bounds) // Filter by the required area
+.filterDate(start,finish) // Filtering by dates 
+.filter(ee.Filter.lt('CLOUD_COVERAGE_ASSESSMENT',9)).map(addNDVI) ; // Filtering by clouds
 var image = ee.Image(img.sort('CLOUD_COVERAGE_ASSESSMENT') .min()).clip(bounds); 
 var visParams = {bands: ['B4', 'B3', 'B2'], gamma: 2, min:300, max:3000}; 
 Map.centerObject(bounds, 8); 
